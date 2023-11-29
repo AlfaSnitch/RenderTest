@@ -22,6 +22,7 @@ import re
 
 
 app = JupyterDash(__name__,external_stylesheets=[dbc.themes.LUX])
+server = app.server
 app.config.suppress_callback_exceptions = True
 df = pd.DataFrame()
 df_temp_range = pd.DataFrame()
