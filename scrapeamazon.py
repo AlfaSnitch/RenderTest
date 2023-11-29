@@ -21,7 +21,9 @@ max_price = 1000
 import re
 
 
-app = JupyterDash(__name__,external_stylesheets=[dbc.themes.LUX])
+
+#app = JupyterDash(__name__,external_stylesheets=[dbc.themes.LUX])
+app = Dash(title = "A test")
 server = app.server
 app.config.suppress_callback_exceptions = True
 df = pd.DataFrame()
